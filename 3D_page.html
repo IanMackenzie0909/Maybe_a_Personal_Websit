@@ -320,16 +320,28 @@
       filmCam.updateProjectionMatrix();
       renderer.render(scene, filmCam);
 
-      // 片門遮幅（給 2D 視窗加一點「拍片感」：上下輕度 letterbox）
-      const ctx = renderer.getContext();
-      ctx.save();
-      ctx.disable(ctx.DEPTH_TEST);
+      // ---- Letterbox（上下黑條，右側 2D 取景器用）----
       const lb = Math.max(0, Math.floor(h * 0.06));
-      ctx.fillStyle = "rgba(0,0,0,0.55)";
-      ctx.fillRect(rightX, 0, rightW, lb);
-      ctx.fillRect(rightX, h-lb, rightW, lb);
-      ctx.restore();
 
+      // 先記住原先的清色
+      const prevClearColor = renderer.getClearColor(new THREE.Color()).clone();
+      const prevClearAlpha = renderer.getClearAlpha();
+      
+      // Top bar
+      renderer.setScissorTest(true);
+      renderer.setViewport(rightX, 0, rightW, lb);
+      renderer.setScissor(rightX, 0, rightW, lb);
+      renderer.setClearColor(0x000000, 1);
+      renderer.clear(true, true, true);
+      
+      // Bottom bar
+      renderer.setViewport(rightX, h - lb, rightW, lb);
+      renderer.setScissor(rightX, h - lb, rightW, lb);
+      renderer.clear(true, true, true);
+      
+      // 還原清色（以免影響下一輪渲染）
+      renderer.setClearColor(prevClearColor, prevClearAlpha);
+      
       requestAnimationFrame(render);
     }
     render();
