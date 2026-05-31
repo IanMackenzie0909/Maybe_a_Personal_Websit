@@ -51,13 +51,16 @@ const translations = {
         },
         projects: {
             title: 'Selected Projects',
-            kicker: 'Filter meaningful projects by the real-world problem area they touch.'
+            kicker: 'Filter meaningful projects by their primary real-world problem area.'
         },
         filters: {
             all: 'All',
             autonomous: 'Self-Driving',
             vision: 'Vision / AI',
+            ai: 'AI / RAG',
             web: 'Web',
+            data: 'Data',
+            cloud: 'Cloud',
             optimization: 'Optimization'
         },
         project: {
@@ -69,11 +72,26 @@ const translations = {
             cv: {
                 body: 'Industrial inspection pipeline combining GroundingDINO and MobileSAM, producing conservative structured evidence for HMI, audit logs, and event engines.'
             },
+            tongue: {
+                body: 'Medical-image segmentation practice project focused on building a reproducible Python and Docker workflow for tongue-region segmentation.'
+            },
+            rag: {
+                body: 'Retrieval-augmented generation practice app built with TypeScript to demonstrate how retrieved context can support interactive AI answers.'
+            },
             next: {
                 body: 'Context-aware city recommendation app designed around mood, time, weather, distance, and personal preference.'
             },
+            homeCloud: {
+                body: 'Personal-cloud tutorial for setting up Nextcloud with Tailscale, focused on remote access, self-hosting, and reproducible setup notes.'
+            },
             pot: {
                 body: 'IIoT smart-pot system with ESP8266 sensing, MQTT data transmission, Blynk monitoring, automatic irrigation, and ESP32-CAM remote observation.'
+            },
+            visualization: {
+                body: 'Interactive NBA team-performance analysis using Plotly and NetworkX to explore passing networks and shooting information.'
+            },
+            maps: {
+                body: 'Python crawler for collecting store information and ratings from Google Maps, useful for location-data collection and analysis workflows.'
             },
             cvrp: {
                 body: 'Capacitated vehicle routing solver comparing crossover and mutation strategies, with systematic experimental analysis and route-performance reporting.'
@@ -145,13 +163,16 @@ const translations = {
         },
         projects: {
             title: '精選專案',
-            kicker: '依照實際應用領域篩選做過的專案。'
+            kicker: '依照主要實際應用領域篩選做過的專案。'
         },
         filters: {
             all: '全部',
             autonomous: '自走車',
             vision: '視覺 / AI',
+            ai: 'AI / RAG',
             web: '網頁',
+            data: '資料',
+            cloud: '雲端',
             optimization: '最佳化'
         },
         project: {
@@ -163,11 +184,26 @@ const translations = {
             cv: {
                 body: '工業檢測視覺流程，結合 GroundingDINO 與 MobileSAM，輸出保守且結構化的證據，供 HMI、稽核紀錄與事件引擎使用。'
             },
+            tongue: {
+                body: '醫學影像分割練習專案，重點是建立可重現的 Python / Docker 舌部分割流程。'
+            },
+            rag: {
+                body: 'RAG 練習應用，使用 TypeScript 展示如何把檢索到的脈絡接進互動式 AI 回答。'
+            },
             next: {
                 body: '情境感知城市推薦應用，根據心情、時間、天氣、距離與個人偏好設計外出決策體驗。'
             },
+            homeCloud: {
+                body: '個人雲端建置教學，使用 Nextcloud 與 Tailscale，聚焦遠端存取、自架服務與可重現設定筆記。'
+            },
             pot: {
                 body: 'AIoT 智慧盆栽系統，使用 ESP8266 感測、MQTT 傳輸、Blynk 監控、自動澆水與 ESP32-CAM 遠端觀察。'
+            },
+            visualization: {
+                body: '互動式 NBA 球隊表現分析，使用 Plotly 與 NetworkX 探索傳球網路與投籃資訊。'
+            },
+            maps: {
+                body: 'Google Maps 店家資訊與評分爬蟲，用於地點資料蒐集與後續分析流程。'
             },
             cvrp: {
                 body: '容量限制車輛路徑問題的基因演算法求解器，比較交配與突變策略，並整理系統化實驗結果。'
@@ -198,6 +234,7 @@ const themeToggle = document.querySelector('.theme-toggle');
 const languageToggle = document.querySelector('.lang-toggle');
 const filterButtons = document.querySelectorAll('.filter-button');
 const projectCards = document.querySelectorAll('.project-card');
+let currentFilter = 'all';
 
 function getNestedValue(source, path) {
     return path.split('.').reduce((value, key) => value?.[key], source);
@@ -227,6 +264,7 @@ function applyLanguage(language) {
     });
 
     updateThemeLabel();
+    applyFilter(currentFilter);
     localStorage.setItem('portfolio-language', language);
 }
 
@@ -257,6 +295,7 @@ function updateThemeLabel() {
 }
 
 function applyFilter(filter) {
+    currentFilter = filter;
     filterButtons.forEach((button) => {
         const active = button.dataset.filter === filter;
         button.classList.toggle('is-active', active);

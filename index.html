@@ -106,20 +106,23 @@
         <section class="section reveal" id="projects" aria-labelledby="projects-title">
             <div class="section-heading">
                 <h2 id="projects-title" data-i18n="projects.title">Selected Projects</h2>
-                <p data-i18n="projects.kicker">Filter meaningful projects by the real-world problem area they touch.</p>
+                <p data-i18n="projects.kicker">Filter meaningful projects by their primary real-world problem area.</p>
             </div>
 
             <div class="filter-bar" aria-label="Project filters">
                 <button class="filter-button is-active" type="button" data-filter="all" data-i18n="filters.all">All</button>
                 <button class="filter-button" type="button" data-filter="autonomous" data-i18n="filters.autonomous">Self-Driving</button>
                 <button class="filter-button" type="button" data-filter="vision" data-i18n="filters.vision">Vision / AI</button>
+                <button class="filter-button" type="button" data-filter="ai" data-i18n="filters.ai">AI / RAG</button>
                 <button class="filter-button" type="button" data-filter="aiot">AIoT</button>
                 <button class="filter-button" type="button" data-filter="web" data-i18n="filters.web">Web</button>
+                <button class="filter-button" type="button" data-filter="data" data-i18n="filters.data">Data</button>
+                <button class="filter-button" type="button" data-filter="cloud" data-i18n="filters.cloud">Cloud</button>
                 <button class="filter-button" type="button" data-filter="optimization" data-i18n="filters.optimization">Optimization</button>
             </div>
 
             <div class="project-grid" aria-live="polite">
-                <article class="project-card featured" data-category="autonomous vision">
+                <article class="project-card featured" data-category="autonomous">
                     <div>
                         <h3 data-i18n="project.asr.title">ASR-AMR: ROS 2 Self-Driving Vehicle Workspace</h3>
                         <p data-i18n="project.asr.body">
@@ -159,6 +162,38 @@
                     <a class="repo-link" href="https://github.com/IanMackenzie0909/CV-Inspection" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
                 </article>
 
+                <article class="project-card" data-category="vision">
+                    <div>
+                        <h3>Tongue-Segmentation</h3>
+                        <p data-i18n="project.tongue.body">
+                            Medical-image segmentation practice project focused on building a reproducible Python and Docker workflow for tongue-region segmentation.
+                        </p>
+                        <div class="project-meta">
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>Segmentation</span>
+                            <span>CV</span>
+                        </div>
+                    </div>
+                    <a class="repo-link" href="https://github.com/IanMackenzie0909/Tongue-Segmentation" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
+                </article>
+
+                <article class="project-card" data-category="ai">
+                    <div>
+                        <h3>RAG-Live</h3>
+                        <p data-i18n="project.rag.body">
+                            Retrieval-augmented generation practice app built with TypeScript to demonstrate how retrieved context can support interactive AI answers.
+                        </p>
+                        <div class="project-meta">
+                            <span>TypeScript</span>
+                            <span>RAG</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <a class="repo-link" href="https://github.com/IanMackenzie0909/RAG-Live" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
+                </article>
+
                 <article class="project-card" data-category="web">
                     <div>
                         <h3>NEXT-STOPS</h3>
@@ -175,6 +210,22 @@
                     <a class="repo-link" href="https://github.com/IanMackenzie0909/NEXT-STOPS" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
                 </article>
 
+                <article class="project-card" data-category="cloud">
+                    <div>
+                        <h3>Home-Cloud</h3>
+                        <p data-i18n="project.homeCloud.body">
+                            Personal-cloud tutorial for setting up Nextcloud with Tailscale, focused on remote access, self-hosting, and reproducible setup notes.
+                        </p>
+                        <div class="project-meta">
+                            <span>Nextcloud</span>
+                            <span>Tailscale</span>
+                            <span>Self-hosting</span>
+                            <span>Cloud</span>
+                        </div>
+                    </div>
+                    <a class="repo-link" href="https://github.com/IanMackenzie0909/Home-Cloud" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
+                </article>
+
                 <article class="project-card" data-category="aiot">
                     <div>
                         <h3>Smart-Pot-Monitoring-System</h3>
@@ -189,6 +240,38 @@
                         </div>
                     </div>
                     <a class="repo-link" href="https://github.com/IanMackenzie0909/Smart-Pot-Monitoring-System" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
+                </article>
+
+                <article class="project-card" data-category="data">
+                    <div>
+                        <h3>Interactive Visualization Data Analysis</h3>
+                        <p data-i18n="project.visualization.body">
+                            Interactive NBA team-performance analysis using Plotly and NetworkX to explore passing networks and shooting information.
+                        </p>
+                        <div class="project-meta">
+                            <span>Jupyter</span>
+                            <span>Plotly</span>
+                            <span>NetworkX</span>
+                            <span>Visualization</span>
+                        </div>
+                    </div>
+                    <a class="repo-link" href="https://github.com/IanMackenzie0909/Interactive_Visualization_Data_Analysis" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
+                </article>
+
+                <article class="project-card" data-category="data">
+                    <div>
+                        <h3>Google Maps Crawler</h3>
+                        <p data-i18n="project.maps.body">
+                            Python crawler for collecting store information and ratings from Google Maps, useful for location-data collection and analysis workflows.
+                        </p>
+                        <div class="project-meta">
+                            <span>Python</span>
+                            <span>Crawler</span>
+                            <span>Maps</span>
+                            <span>Data</span>
+                        </div>
+                    </div>
+                    <a class="repo-link" href="https://github.com/IanMackenzie0909/Google_Maps_crawler" target="_blank" rel="noreferrer" data-i18n="project.open">Open repository</a>
                 </article>
 
                 <article class="project-card" data-category="optimization">
