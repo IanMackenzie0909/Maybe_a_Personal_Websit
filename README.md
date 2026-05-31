@@ -2,7 +2,7 @@
 
 Static GitHub Pages portfolio for Ian Mackenzie.
 
-Live site: https://ianmackenzie0909.github.io/Maybe_a_Personal_Websit/
+Website: [https://ianmackenzie0909.github.io/Maybe_a_Personal_Websit/](https://ianmackenzie0909.github.io/Maybe_a_Personal_Websit/)
 
 ## What is included
 
@@ -15,8 +15,3 @@ Live site: https://ianmackenzie0909.github.io/Maybe_a_Personal_Websit/
 - Small scroll reveal animations
 - Responsive layout for desktop and mobile
 - Static HTML/CSS/JavaScript deployment through GitHub Pages
-
-## Deploy
-
-The repository uses the existing GitHub Pages workflow in `.github/workflows/jekyll-gh-pages.yml`.
-Pushing to `main` triggers a Pages build and deploy.

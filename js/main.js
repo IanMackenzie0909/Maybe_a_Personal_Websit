@@ -5,8 +5,8 @@ root.classList.add('js');
 
 const translations = {
     en: {
-        metaDescription: "Ian Mackenzie's autonomous robotics portfolio, focused on ROS 2 self-driving AMR, computer vision, AIoT, web apps, and optimization projects.",
-        title: 'Ian Mackenzie | Autonomous Robotics Portfolio',
+        metaDescription: "Ian Mackenzie's Personal Projects Portfolio, focused on ROS 2 self-driving AMR, computer vision, AIoT, web apps, and optimization projects.",
+        title: 'Ian Mackenzie | Personal Projects Portfolio',
         nav: {
             about: 'About',
             projects: 'Projects',
@@ -19,16 +19,16 @@ const translations = {
             themeLight: 'Light'
         },
         hero: {
-            title: 'Ian Mackenzie <span>Autonomous Robotics Portfolio</span>',
-            lead: 'NTU postgraduate student building practical systems across ROS 2 self-driving vehicles, computer vision inspection, AIoT automation, web products, and optimization experiments.',
+            title: 'Ian Mackenzie <span>Personal Projects Portfolio</span>',
+            lead: 'NTU & NTUST hybrid postgraduate student building practical systems across ROS 2 self-driving vehicles, computer vision inspection, AIoT automation, web products, and optimization experiments.',
             github: 'View GitHub',
             projects: 'Selected Projects'
         },
         snapshot: {
             title: 'Self-driving systems through real builds',
-            body: 'My main work is wheel-based AMR development, ROS 2 navigation, perception integration, and mission workflows. Robotic arms are a future interest project.',
+            body: 'My main work is wheel-based AMR development, ROS 2 navigation, perception integration, and mission workflows. Robotic arms with VLA is a future interest project.',
             signal1: 'ROS 2 self-driving AMR workspace with SLAM, Nav2, lidar, teleoperation, and inspection missions.',
-            signal2: 'Computer vision pipelines using GroundingDINO, MobileSAM, OpenCV, PyTorch, Docker, and CUDA.',
+            signal2: 'Computer vision pipelines using Yolo, GroundingDINO, MobileSAM, OpenCV, PyTorch, Docker, and CUDA.',
             signal3: 'Web, cloud, and AIoT projects connecting real-world context to usable interfaces.'
         },
         stats: {
@@ -39,7 +39,7 @@ const translations = {
         about: {
             title: 'About',
             kicker: 'Turning coursework, club practice, and personal builds into inspectable autonomous-vehicle engineering projects.',
-            body: 'I am an autonomous robotics-oriented engineering postgraduate at National Taiwan University. My portfolio shows a hands-on style: integrating ROS 2 self-driving vehicle workspaces, building perception and inspection flows, connecting sensors to cloud dashboards, and turning algorithmic experiments into documented projects that others can inspect.',
+            body: 'I am a computer vision-focused && autonomous robotics-oriented engineering postgraduate at National Taiwan University. My portfolio shows a hands-on style: integrating ROS 2 self-driving vehicle workspaces, building perception and inspection flows, connecting sensors to cloud dashboards, and turning algorithmic experiments into documented projects that others can inspect.',
             direction: 'Current Direction'
         },
         tags: {
@@ -51,7 +51,7 @@ const translations = {
         },
         projects: {
             title: 'Selected Projects',
-            kicker: 'Filter meaningful projects by their primary real-world problem area.'
+            kicker: 'Meaningful projects categorized by primary real-world problem area.'
         },
         filters: {
             all: 'All',
@@ -101,7 +101,7 @@ const translations = {
             title: 'Skills',
             kicker: 'A practical stack for connecting vehicle hardware, ROS 2 navigation, perception models, data, and interfaces.',
             vehicle: {
-                title: 'Autonomous Vehicles'
+                title: 'Autonomous Mobile Robots'
             },
             future: {
                 title: 'Future Robotics Plan',
@@ -110,15 +110,15 @@ const translations = {
         },
         contact: {
             title: "Let's build the next practical system.",
-            body: 'Open to research, autonomous vehicles, computer vision, AIoT, and applied web projects. Reach me through GitHub or email.'
+            body: 'Open to research, autonomous mobile robots, computer vision, AIoT, and applied web projects. Reach me through GitHub or email.'
         },
         footer: {
-            copy: '© 2026 Ian Mackenzie. Built as a static GitHub Pages portfolio.'
+            copy: '© 2026 Ian Mackenzie. Personal Project Portfolio.'
         }
     },
     zh: {
-        metaDescription: 'Ian Mackenzie 的自走車作品集，聚焦 ROS 2 自走車、電腦視覺、AIoT、網頁應用與最佳化專案。',
-        title: 'Ian Mackenzie | 自走車作品集',
+        metaDescription: 'Ian Mackenzie 的個人專案作品集，聚焦 ROS 2 自走車、電腦視覺、AIoT、網頁應用與最佳化專案。',
+        title: 'Ian Mackenzie | 個人專案作品集',
         nav: {
             about: '關於',
             projects: '專案',
@@ -131,16 +131,16 @@ const translations = {
             themeLight: '淺色'
         },
         hero: {
-            title: 'Ian Mackenzie <span>自走車作品集</span>',
-            lead: '台大研究生，實作方向聚焦 ROS 2 自走車、電腦視覺檢測、AIoT 自動化、網頁產品與最佳化實驗。',
+            title: 'Ian Mackenzie <span>個人專案作品集</span>',
+            lead: '臺大與臺科混血研究生，實作方向聚焦 ROS 2 自走車、電腦視覺檢測、AIoT 自動化、網頁產品與最佳化實驗。',
             github: '查看 GitHub',
             projects: '精選專案'
         },
         snapshot: {
             title: '用實作打造自走系統',
-            body: '目前主軸是輪式自走車開發、ROS 2 導航、感知整合與任務流程。機械手臂是未來想延伸的興趣專案。',
+            body: '目前主軸是輪式自走車開發、ROS 2 導航、感知整合與任務流程。機械手臂結合 VLA 是未來想延伸的興趣。',
             signal1: 'ROS 2 自走車工作區，整合 SLAM、Nav2、光達、遙控與檢測任務流程。',
-            signal2: '使用 GroundingDINO、MobileSAM、OpenCV、PyTorch、Docker 與 CUDA 的電腦視覺流程。',
+            signal2: '使用 Yolo、GroundingDINO、MobileSAM、OpenCV、PyTorch、Docker 與 CUDA 的電腦視覺流程。',
             signal3: '把 Web、Cloud 與 AIoT 專案連到真實情境，做成可操作的介面。'
         },
         stats: {
@@ -150,8 +150,8 @@ const translations = {
         },
         about: {
             title: '關於',
-            kicker: '把課堂、社團與個人實作整理成可檢視、可重現的自走車工程作品。',
-            body: '我是國立臺灣大學的研究生，方向偏自走車與應用型機器人。我的作品集重視實作：整合 ROS 2 自走車工作區、建立感知與檢測流程、把感測資料接到雲端儀表板，也把演算法實驗整理成可閱讀、可驗證的專案。',
+            kicker: '把課堂、社團與個人實作整理成可檢視、可重現的作品。',
+            body: '我是臺大與臺科混血研究生，方向偏自走車與機器視覺。我的作品集整合 ROS 2 自走車工作區、感知與檢測流程，把感測資料接到雲端儀表板，也把演算法實驗整理成可閱讀、可驗證的專案。',
             direction: '目前方向'
         },
         tags: {
@@ -163,7 +163,7 @@ const translations = {
         },
         projects: {
             title: '精選專案',
-            kicker: '依照主要實際應用領域篩選做過的專案。'
+            kicker: '依照實際應用領域篩選專案，更多內容請到 GitHub 查看。'
         },
         filters: {
             all: '全部',
@@ -194,7 +194,7 @@ const translations = {
                 body: '情境感知城市推薦應用，根據心情、時間、天氣、距離與個人偏好設計外出決策體驗。'
             },
             homeCloud: {
-                body: '個人雲端建置教學，使用 Nextcloud 與 Tailscale，聚焦遠端存取、自架服務與可重現設定筆記。'
+                body: '跨國連線個人雲端建置教學，使用 Nextcloud 與 Tailscale，聚焦遠端存取、自架服務與可重現設定筆記。'
             },
             pot: {
                 body: 'AIoT 智慧盆栽系統，使用 ESP8266 感測、MQTT 傳輸、Blynk 監控、自動澆水與 ESP32-CAM 遠端觀察。'
@@ -211,7 +211,7 @@ const translations = {
         },
         skills: {
             title: '技能',
-            kicker: '能把自走車硬體、ROS 2 導航、感知模型、資料與介面接在一起的實作型技術組合。',
+            kicker: '自走車硬體、ROS 2 導航、感知模型、資料與介面，綜合實作型技能組合包。',
             vehicle: {
                 title: '自走車'
             },
@@ -225,7 +225,7 @@ const translations = {
             body: '歡迎交流自走車、電腦視覺、AIoT、研究與應用型網頁專案，可以透過 GitHub 或 Email 聯絡我。'
         },
         footer: {
-            copy: '© 2026 Ian Mackenzie。靜態 GitHub Pages 作品集。'
+            copy: '© 2026 Ian Mackenzie 個人作品集網站。'
         }
     }
 };

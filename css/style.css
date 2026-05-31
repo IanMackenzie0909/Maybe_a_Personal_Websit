@@ -656,6 +656,7 @@ main {
 }
 
 footer {
+    text-align: center;
     max-width: var(--max);
     margin: 0 auto;
     padding: 24px;
