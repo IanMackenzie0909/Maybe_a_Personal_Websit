@@ -715,6 +715,21 @@ html[data-theme="dark"] .project-meta span {
     color: #d8f7ff;
 }
 
+html[data-theme="dark"] .contact-band {
+    border-color: rgba(67, 189, 225, 0.34);
+    background: linear-gradient(135deg, #173243 0%, #102634 100%);
+    color: var(--ink);
+}
+
+html[data-theme="dark"] .contact-band p {
+    color: #c7e4ee;
+}
+
+html[data-theme="dark"] .contact-links a {
+    border-color: rgba(216, 247, 255, 0.32);
+    color: #f4fbff;
+}
+
 @media (max-width: 860px) {
     .nav {
         align-items: flex-start;
