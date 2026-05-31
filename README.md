@@ -9,8 +9,12 @@ Live site: https://ianmackenzie0909.github.io/Maybe_a_Personal_Websit/
 - Bilingual personal landing page focused on self-driving AMR work
 - About, selected projects, skills, and contact sections
 - GitHub project links and concise technical summaries for ROS 2 AMR, vision, AIoT, and web projects
+- Light/dark theme switch
+- English/Traditional Chinese language switch
+- Meaningful project category filters
+- Small scroll reveal animations
 - Responsive layout for desktop and mobile
-- Single-file static deployment through GitHub Pages
+- Static HTML/CSS/JavaScript deployment through GitHub Pages
 
 ## Deploy
 
