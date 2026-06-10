@@ -492,6 +492,20 @@ main {
     line-height: 1.25;
 }
 
+.project-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.project-logo {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 14px 28px rgba(65, 104, 183, 0.2);
+}
+
 .project-card p {
     margin: 12px 0 0;
     color: var(--muted);
