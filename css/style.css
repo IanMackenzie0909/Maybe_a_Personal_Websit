@@ -515,6 +515,13 @@ main {
     color: var(--ink);
 }
 
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
 .repo-link {
     display: inline-flex;
     align-items: center;
