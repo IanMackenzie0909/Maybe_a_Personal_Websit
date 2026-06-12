@@ -64,7 +64,7 @@ const translations = {
             optimization: 'Optimization'
         },
         project: {
-            live: 'Open live site',
+            live: 'Visit site',
             open: 'Open repository',
             asr: {
                 title: 'ASR-AMR: ROS 2 Self-Driving Vehicle Workspace',
@@ -177,7 +177,7 @@ const translations = {
             optimization: '最佳化'
         },
         project: {
-            live: '開啟正式網站',
+            live: '造訪網站',
             open: '開啟 repo',
             asr: {
                 title: 'ASR-AMR：ROS 2 自走車工作區',
